@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
+        integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>EasyLiving</title>
+</head>
+
+<body>
+    <nav>
+        <h1>EasyLiving</h1>
+        <div class="search">
+            <ul id="search-ul">
+                <li>Home</li>
+                <li>About</li>
+                <li>products</li>
+                <li>Join us</li>
+            </ul>
+            <form action="" id="form">
+                <input type="text" placeholder="Search products" id="input">
+                <button class="search-btn" type="submit" id="searchBtn">Search</button>
+            </form>
+        </div>
+        <a id="cart-btn-a" href="#">
+            <button id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+        </a>
+    </nav>
+
+
+    <div id="slideContainer" class="slider-container">
+        <button id="leftBtn" class="slider-btn">&#9664;</button>
+        <div class="slides" id="slides">
+            <div class="slide"><img src="./images/slide1.png" alt="Slide 1"></div>
+            <div class="slide"><img src="./images/slide2.png" alt="Slide 2"></div>
+            <div class="slide"><img src="./images/slide3.png" alt="Slide 3"></div>
+        </div>
+        <button id="rightBtn" class="slider-btn">&#9654;</button>
+    </div>
+    <h1 id="productH1">Products</h1>
+    <div id="productsContainer"></div>
+    <div id="cartContainer">
+        <button id="cross-btn">X</button>
+        <h1>Your Cart</h1>
+        <div id="cartCards">
+            <div id="table-container">
+                <table>
+                    <thead>
+                        <th>image</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>category</th>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+                <h1 id="emptyMessage">Your Cart is empty</h1>
+            </div>
+            <div id="totalPrice">
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <!-- Logo and About -->
+            <div class="footer-section about">
+                <h2>EasyLiving</h2>
+                <p>Your one-stop destination for modern and stylish furniture. Bringing comfort to your home!</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Support -->
+            <div class="footer-section support">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media and Contact -->
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram social-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter social-icon"></i></a>
+                </div>
+                <p>Email: support@easyliving.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> &copy; <span id="year"></span> EasyLiving | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
